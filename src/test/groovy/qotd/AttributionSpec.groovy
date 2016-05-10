@@ -9,14 +9,24 @@ import spock.lang.Specification
 @TestFor(Attribution)
 class AttributionSpec extends Specification {
 
-    def setup() {
-    }
+    def "test for valid attribution name"(){
+	
+	when: 'name is empty'
+	def a1 = new Attribution(name: '')
+	
+	then: 'validation should fail'
+	!a1.validate()
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
+	when: 'name is null'
+    def a2 = new Attribution(name: null)
+  
+    then: 'validation should fail'
+    !a2.validate()
+  
+    when: 'name is valid'
+    def a3 = new Attribution(name: 'Anonymous')
+  
+    then: 'validation should pass'
+    a3.validate()
+	}
 }

@@ -9,14 +9,24 @@ import spock.lang.Specification
 @TestFor(Quote)
 class QuoteSpec extends Specification {
 
-    def setup() {
-    }
+  def "test for valid quote test"(){
+  
+  when: 'text is empty'
+  def q = new Quote(text: '')
+  
+  then: 'validation should fail'
+  !q.validate()
 
-    def cleanup() {
-    }
-
-    void "test something"() {
-        expect:"fix me"
-            true == false
-    }
-}
+  when: 'text is null'
+  def q1 = new Quote(text: null)
+  
+  then: 'validation should fail'
+  !q1.validate()
+  
+  when: 'text is valid'
+  def q2 = new Quote(text: 'Some memorable words...')
+  
+  then: 'validation should pass'
+  q2.validate()
+  }
+  }
