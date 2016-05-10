@@ -101,6 +101,7 @@ sourceSets{
 			srcDir 'grails-app/migrations'
 		}
 	}
+	}
 
 
 sonarqube {
