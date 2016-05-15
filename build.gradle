@@ -105,7 +105,11 @@ sourceSets{
 			srcDir 'grails-app/migrations'
 		}
 	}
+<<<<<<< HEAD
 }n
+=======
+	}
+>>>>>>> 2c7d7e02172ec9c015e40734d614975f8fd741e5
 
 
 sonarqube {
