@@ -89,14 +89,14 @@ uploadArchives {
 					url: "${nexusUrl}/content/repositories/releases") {
 						authentication(userName: nexusUsername,
 						password: nexusPassword)
-	}
-snapshotRepository(
-	url: "${nexusUrl}/content/repositories/snapshots") {
-		authentication(userName: nexusUsername,
-		password: nexusPassword)
+					}
+			snapshotRepository(
+					url: "${nexusUrl}/content/repositories/snapshots") {
+						authentication(userName: nexusUsername,
+						password: nexusPassword)
+					}
 				}
 			}
-		}
 	}
 
 sourceSets{

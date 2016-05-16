@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="qotd.AttributionSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-05-10T02:16:24" hostname="Computater9000" time="0.2">
-  <properties/>
-  <testcase name="test for valid attribution name" classname="qotd.AttributionSpec" time="0.2"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
