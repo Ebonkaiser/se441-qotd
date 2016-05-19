@@ -1,3 +1,4 @@
+---
 hibernate:
     cache:
         queries: false
@@ -53,6 +54,9 @@ environments:
                  databasemigration:
                      updateOnStart: true
                      updateOnStartFileNames: [changelog.groovy]
+
+---
+---
 grails:
     profile: web
     codegen:
